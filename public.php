@@ -64,7 +64,6 @@ class plugins_gmapconnect_public extends plugins_gmapconnect_db
      */
     public function setItemData(){
         $setData = $this->getItems('root',NULL,'one',false);
-        return $setData;
+        return $setData ? $setData['key_gconnect'] : null;
     }
 }
-?>
